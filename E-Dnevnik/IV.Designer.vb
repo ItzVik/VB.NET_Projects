@@ -314,6 +314,7 @@ Partial Class IV
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(410, 288)
         Me.Controls.Add(Me.LinkLabel24)
         Me.Controls.Add(Me.LinkLabel23)

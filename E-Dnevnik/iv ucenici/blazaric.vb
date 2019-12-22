@@ -36,6 +36,12 @@ Public Class blazaric
 
             CheckBox1.Enabled = False
 
+            Dim x As Integer
+            x = Integer.Parse(TextBox1.Text)
+            TextBox4.Text = x
+
+
+
             My.Computer.FileSystem.WriteAllText("c:\Dnevnik\Blazaric\Ocena.txt", TextBox1.Text, True)
             My.Computer.FileSystem.WriteAllText("c:\Dnevnik\Blazaric\Opis.txt", TextBox2.Text, True)
             My.Computer.FileSystem.WriteAllText("c:\Dnevnik\Blazaric\Predmet.txt", TextBox3.Text, True)
@@ -45,15 +51,30 @@ Public Class blazaric
             TextBox1.Text = ""
             TextBox2.Text = ""
             TextBox3.Text = ""
+
+            MessageBox.Show("Uspesno ste upisali ocenu. Ocena je upisana u fajlu.", "Uspeh!", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Else
             TextBox1.Text = ""
             TextBox2.Text = ""
             TextBox3.Text = ""
+
+            Dim x As Integer
+            x = Integer.Parse(TextBox1.Text)
+            TextBox4.Text = x
+
+            MessageBox.Show("Uspesno ste upisali ocenu. Ocena nije upisana u fajlu.", "Uspeh!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
         End If
 
     End Sub
 
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         CheckBox1.Enabled = False
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.Hide()
+        IV.Show()
+
     End Sub
 End Class
