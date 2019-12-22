@@ -51,6 +51,7 @@ Partial Class login
         '
         Me.TextBox2.Location = New System.Drawing.Point(116, 45)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox2.Size = New System.Drawing.Size(128, 20)
         Me.TextBox2.TabIndex = 3
         '
@@ -106,7 +107,7 @@ Partial Class login
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "login"
-        Me.Text = "login"
+        Me.Text = "Login"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -114,9 +115,9 @@ Partial Class login
 
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Button2 As Button
+    Private WithEvents TextBox2 As TextBox
 End Class

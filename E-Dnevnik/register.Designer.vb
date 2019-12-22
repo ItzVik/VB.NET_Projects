@@ -52,6 +52,7 @@ Partial Class register
         '
         Me.TextBox2.Location = New System.Drawing.Point(116, 48)
         Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
         Me.TextBox2.Size = New System.Drawing.Size(164, 20)
         Me.TextBox2.TabIndex = 3
         '

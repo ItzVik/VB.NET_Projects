@@ -12,4 +12,10 @@
         Form1.Show()
 
     End Sub
+
+    Private Sub LinkLabel3_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel3.LinkClicked
+        Me.Hide()
+        blazaric.Show()
+
+    End Sub
 End Class

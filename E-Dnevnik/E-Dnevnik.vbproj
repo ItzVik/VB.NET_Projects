@@ -80,6 +80,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="iv ucenici\blazaric.Designer.vb">
+      <DependentUpon>blazaric.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\blazaric.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="IV.Designer.vb">
       <DependentUpon>IV.vb</DependentUpon>
     </Compile>
@@ -117,6 +123,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\blazaric.resx">
+      <DependentUpon>blazaric.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IV.resx">
       <DependentUpon>IV.vb</DependentUpon>
