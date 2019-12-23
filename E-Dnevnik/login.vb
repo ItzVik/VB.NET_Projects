@@ -1,4 +1,5 @@
-﻿Public Class login
+﻿Imports System.Data.SqlClient
+Public Class login
     Dim a As Integer = 0
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
         Me.Hide()
@@ -21,6 +22,7 @@
         Else
             MessageBox.Show("Podaci koji su uneti nisu tacni!", "Greska!", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
