@@ -22,6 +22,7 @@ Partial Class radosavljevicaca
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(radosavljevicaca))
         Me.Button3 = New System.Windows.Forms.Button()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -150,10 +151,10 @@ Partial Class radosavljevicaca
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.CheckedListBox1)
         Me.Controls.Add(Me.Button2)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "radosavljevicaca"
-        Me.ShowIcon = False
         Me.Text = "Radosavljevic Aca"
         Me.ResumeLayout(False)
         Me.PerformLayout()

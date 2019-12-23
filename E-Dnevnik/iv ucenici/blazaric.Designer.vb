@@ -22,6 +22,7 @@ Partial Class blazaric
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(blazaric))
         Me.Button2 = New System.Windows.Forms.Button()
         Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -151,10 +152,10 @@ Partial Class blazaric
         Me.Controls.Add(Me.CheckedListBox1)
         Me.Controls.Add(Me.Button2)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "blazaric"
-        Me.ShowIcon = False
         Me.Text = "Blazaric Viktor"
         Me.ResumeLayout(False)
         Me.PerformLayout()

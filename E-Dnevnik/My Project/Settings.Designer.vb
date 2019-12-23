@@ -89,6 +89,18 @@ Namespace My
                 Me("email") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("")>  _
+        Public Property phoneNumber() As String
+            Get
+                Return CType(Me("phoneNumber"),String)
+            End Get
+            Set
+                Me("phoneNumber") = value
+            End Set
+        End Property
     End Class
 End Namespace
 
