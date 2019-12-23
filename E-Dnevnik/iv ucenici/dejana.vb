@@ -36,10 +36,6 @@ Public Class dejana
 
             CheckBox1.Enabled = False
 
-            Dim x As Integer
-            x = Integer.Parse(TextBox1.Text)
-            TextBox4.Text = x
-
 
 
             My.Computer.FileSystem.WriteAllText("c:\Dnevnik\dejana\Ocena.txt", TextBox1.Text, True)
@@ -58,9 +54,7 @@ Public Class dejana
             TextBox2.Text = ""
             TextBox3.Text = ""
 
-            Dim x As Integer
-            x = Integer.Parse(TextBox1.Text)
-            TextBox4.Text = x
+
 
             MessageBox.Show("Uspesno ste upisali ocenu. Ocena nije upisana u fajlu.", "Uspeh!", MessageBoxButtons.OK, MessageBoxIcon.Information)
 

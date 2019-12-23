@@ -36,9 +36,7 @@ Public Class stevanovicsara
 
             CheckBox1.Enabled = False
 
-            Dim x As Integer
-            x = Integer.Parse(TextBox1.Text)
-            TextBox4.Text = x
+
 
 
 
@@ -58,9 +56,6 @@ Public Class stevanovicsara
             TextBox2.Text = ""
             TextBox3.Text = ""
 
-            Dim x As Integer
-            x = Integer.Parse(TextBox1.Text)
-            TextBox4.Text = x
 
             MessageBox.Show("Uspesno ste upisali ocenu. Ocena nije upisana u fajlu.", "Uspeh!", MessageBoxButtons.OK, MessageBoxIcon.Information)
 

@@ -23,8 +23,6 @@ Partial Class petrovic
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
@@ -45,23 +43,6 @@ Partial Class petrovic
         Me.Button3.TabIndex = 47
         Me.Button3.Text = "Nazad"
         Me.Button3.UseVisualStyleBackColor = True
-        '
-        'TextBox4
-        '
-        Me.TextBox4.Location = New System.Drawing.Point(7, 247)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.ReadOnly = True
-        Me.TextBox4.Size = New System.Drawing.Size(141, 20)
-        Me.TextBox4.TabIndex = 46
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(7, 230)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(119, 13)
-        Me.Label4.TabIndex = 45
-        Me.Label4.Text = "Zadnja upisana ocena :"
         '
         'TextBox3
         '
@@ -159,8 +140,6 @@ Partial Class petrovic
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(829, 278)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.CheckBox1)
@@ -171,7 +150,10 @@ Partial Class petrovic
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.CheckedListBox1)
         Me.Controls.Add(Me.Button2)
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "petrovic"
+        Me.ShowIcon = False
         Me.Text = "Petrovic Ognjen"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -179,8 +161,6 @@ Partial Class petrovic
     End Sub
 
     Friend WithEvents Button3 As Button
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Label4 As Label
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents CheckBox1 As CheckBox
