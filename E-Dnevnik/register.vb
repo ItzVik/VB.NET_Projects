@@ -21,6 +21,7 @@
         If a = 2 Then
             My.Settings.Username = TextBox1.Text
             My.Settings.Password = TextBox2.Text
+            My.Settings.email = TextBox3.Text
             My.Settings.Save()
 
             Me.Hide()

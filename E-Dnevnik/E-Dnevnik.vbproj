@@ -73,6 +73,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="changepassword.Designer.vb">
+      <DependentUpon>changepassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="changepassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -80,10 +86,142 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="iv ucenici\arsicmarija.Designer.vb">
+      <DependentUpon>arsicmarija.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\arsicmarija.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\arsicmihailo.Designer.vb">
+      <DependentUpon>arsicmihailo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\arsicmihailo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="iv ucenici\blazaric.Designer.vb">
       <DependentUpon>blazaric.vb</DependentUpon>
     </Compile>
     <Compile Include="iv ucenici\blazaric.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\colakovic.Designer.vb">
+      <DependentUpon>colakovic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\colakovic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\dejana.Designer.vb">
+      <DependentUpon>dejana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\dejana.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\jasicmatija.Designer.vb">
+      <DependentUpon>jasicmatija.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\jasicmatija.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\markovicdarko.Designer.vb">
+      <DependentUpon>markovicdarko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\markovicdarko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\pantelicandrijana.Designer.vb">
+      <DependentUpon>pantelicandrijana.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\pantelicandrijana.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\pesic.Designer.vb">
+      <DependentUpon>pesic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\pesic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\petrovic.Designer.vb">
+      <DependentUpon>petrovic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\petrovic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\petrovicmarko.Designer.vb">
+      <DependentUpon>petrovicmarko.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\petrovicmarko.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\radenkovic.Designer.vb">
+      <DependentUpon>radenkovic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\radenkovic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\radosavljevic.Designer.vb">
+      <DependentUpon>radosavljevic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\radosavljevic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\radosavljevicaca.Designer.vb">
+      <DependentUpon>radosavljevicaca.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\radosavljevicaca.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\radosavljeviclena.Designer.vb">
+      <DependentUpon>radosavljeviclena.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\radosavljeviclena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\radovanovicantonija.Designer.vb">
+      <DependentUpon>radovanovicantonija.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\radovanovicantonija.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\stevanovicsara.Designer.vb">
+      <DependentUpon>stevanovicsara.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\stevanovicsara.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\suleicandjela.Designer.vb">
+      <DependentUpon>suleicandjela.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\suleicandjela.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\suleicmilena.Designer.vb">
+      <DependentUpon>suleicmilena.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\suleicmilena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\suleicvukasin.Designer.vb">
+      <DependentUpon>suleicvukasin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\suleicvukasin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\svetkovichelena.Designer.vb">
+      <DependentUpon>svetkovichelena.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\svetkovichelena.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\veselinovicnemanja.Designer.vb">
+      <DependentUpon>veselinovicnemanja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\veselinovicnemanja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iv ucenici\zivulovic.Designer.vb">
+      <DependentUpon>zivulovic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="iv ucenici\zivulovic.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IV.Designer.vb">
@@ -121,11 +259,80 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="changepassword.resx">
+      <DependentUpon>changepassword.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\arsicmarija.resx">
+      <DependentUpon>arsicmarija.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\arsicmihailo.resx">
+      <DependentUpon>arsicmihailo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="iv ucenici\blazaric.resx">
       <DependentUpon>blazaric.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\colakovic.resx">
+      <DependentUpon>colakovic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\dejana.resx">
+      <DependentUpon>dejana.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\jasicmatija.resx">
+      <DependentUpon>jasicmatija.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\markovicdarko.resx">
+      <DependentUpon>markovicdarko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\pantelicandrijana.resx">
+      <DependentUpon>pantelicandrijana.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\pesic.resx">
+      <DependentUpon>pesic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\petrovic.resx">
+      <DependentUpon>petrovic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\petrovicmarko.resx">
+      <DependentUpon>petrovicmarko.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\radenkovic.resx">
+      <DependentUpon>radenkovic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\radosavljevic.resx">
+      <DependentUpon>radosavljevic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\radosavljevicaca.resx">
+      <DependentUpon>radosavljevicaca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\radosavljeviclena.resx">
+      <DependentUpon>radosavljeviclena.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\radovanovicantonija.resx">
+      <DependentUpon>radovanovicantonija.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\stevanovicsara.resx">
+      <DependentUpon>stevanovicsara.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\suleicandjela.resx">
+      <DependentUpon>suleicandjela.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\suleicmilena.resx">
+      <DependentUpon>suleicmilena.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\suleicvukasin.resx">
+      <DependentUpon>suleicvukasin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\svetkovichelena.resx">
+      <DependentUpon>svetkovichelena.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\veselinovicnemanja.resx">
+      <DependentUpon>veselinovicnemanja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iv ucenici\zivulovic.resx">
+      <DependentUpon>zivulovic.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IV.resx">
       <DependentUpon>IV.vb</DependentUpon>

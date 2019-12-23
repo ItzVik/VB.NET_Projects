@@ -173,7 +173,7 @@ Partial Class blazaric
         Me.Controls.Add(Me.Button2)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Name = "blazaric"
-        Me.Text = "Blazaric"
+        Me.Text = "Blazaric Viktor"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

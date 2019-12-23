@@ -214,10 +214,10 @@ Partial Class IV
         Me.LinkLabel15.AutoSize = True
         Me.LinkLabel15.Location = New System.Drawing.Point(128, 179)
         Me.LinkLabel15.Name = "LinkLabel15"
-        Me.LinkLabel15.Size = New System.Drawing.Size(115, 13)
+        Me.LinkLabel15.Size = New System.Drawing.Size(112, 13)
         Me.LinkLabel15.TabIndex = 29
         Me.LinkLabel15.TabStop = True
-        Me.LinkLabel15.Text = "Radosavljevic Antonija"
+        Me.LinkLabel15.Text = "Radovanovic Antonija"
         '
         'LinkLabel16
         '
