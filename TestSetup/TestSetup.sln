@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "TestSetup", "TestSetup.vdproj", "{6144A17D-E86C-4018-965F-A0AE1F48CF30}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6144A17D-E86C-4018-965F-A0AE1F48CF30}.Debug|Default.ActiveCfg = Debug
+		{6144A17D-E86C-4018-965F-A0AE1F48CF30}.Debug|Default.Build.0 = Debug
+		{6144A17D-E86C-4018-965F-A0AE1F48CF30}.Release|Default.ActiveCfg = Release
+		{6144A17D-E86C-4018-965F-A0AE1F48CF30}.Release|Default.Build.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5E7BC65-990A-4996-9D01-DC89624477DB}
+	EndGlobalSection
+EndGlobal

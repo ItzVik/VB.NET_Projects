@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29020.237
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "E-Dnevnik", "E-Dnevnik.vbproj", "{DD12A965-1AF4-427A-A1F9-ED7828A62075}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD12A965-1AF4-427A-A1F9-ED7828A62075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD12A965-1AF4-427A-A1F9-ED7828A62075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD12A965-1AF4-427A-A1F9-ED7828A62075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD12A965-1AF4-427A-A1F9-ED7828A62075}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0291B12C-3340-4B1C-8DF0-C11D8BA1F229}
+	EndGlobalSection
+EndGlobal
