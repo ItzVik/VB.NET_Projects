@@ -306,10 +306,10 @@ Partial Class IV
         Me.LinkLabel24.Enabled = False
         Me.LinkLabel24.Location = New System.Drawing.Point(285, 211)
         Me.LinkLabel24.Name = "LinkLabel24"
-        Me.LinkLabel24.Size = New System.Drawing.Size(25, 13)
+        Me.LinkLabel24.Size = New System.Drawing.Size(69, 13)
         Me.LinkLabel24.TabIndex = 38
         Me.LinkLabel24.TabStop = True
-        Me.LinkLabel24.Text = "Filip"
+        Me.LinkLabel24.Text = "Milojevic Filip"
         '
         'IV
         '

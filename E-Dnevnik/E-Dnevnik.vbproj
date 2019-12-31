@@ -407,6 +407,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="116-512.ico" />
+    <None Include="Resources\download1.png" />
+    <None Include="Resources\wtf.png" />
+    <None Include="Resources\ron.png" />
+    <None Include="Resources\pup.png" />
+    <None Include="Resources\onn.png" />
+    <None Include="Resources\nup.png" />
+    <None Include="Resources\kup.png" />
+    <None Include="Resources\kom.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\fon.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\bon.png" />
+    <None Include="Resources\988.png" />
+    <None Include="Resources\116-512.png" />
+    <None Include="Resources\98-512.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

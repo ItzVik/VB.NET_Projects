@@ -23,48 +23,23 @@ Partial Class login
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(login))
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.LinkLabel2 = New System.Windows.Forms.LinkLabel()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(97, 13)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Korisnicko ime :"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(116, 9)
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(52, 9)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(128, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(128, 26)
         Me.TextBox1.TabIndex = 1
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(116, 45)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
-        Me.TextBox2.Size = New System.Drawing.Size(128, 20)
-        Me.TextBox2.TabIndex = 3
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 45)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(59, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Lozinka :"
         '
         'Button1
         '
@@ -98,12 +73,41 @@ Partial Class login
         'LinkLabel2
         '
         Me.LinkLabel2.AutoSize = True
-        Me.LinkLabel2.Location = New System.Drawing.Point(12, 78)
+        Me.LinkLabel2.Location = New System.Drawing.Point(12, 93)
         Me.LinkLabel2.Name = "LinkLabel2"
         Me.LinkLabel2.Size = New System.Drawing.Size(132, 13)
         Me.LinkLabel2.TabIndex = 14
         Me.LinkLabel2.TabStop = True
         Me.LinkLabel2.Text = "Zaboravljena lozinka?"
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(52, 55)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(8226)
+        Me.TextBox2.Size = New System.Drawing.Size(128, 26)
+        Me.TextBox2.TabIndex = 18
+        '
+        'Panel1
+        '
+        Me.Panel1.BackColor = System.Drawing.Color.Transparent
+        Me.Panel1.BackgroundImage = Global.E_Dnevnik.My.Resources.Resources.ron
+        Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel1.Location = New System.Drawing.Point(12, 48)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(34, 33)
+        Me.Panel1.TabIndex = 18
+        '
+        'Panel2
+        '
+        Me.Panel2.BackColor = System.Drawing.Color.Transparent
+        Me.Panel2.BackgroundImage = Global.E_Dnevnik.My.Resources.Resources.onn
+        Me.Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Panel2.Location = New System.Drawing.Point(12, 5)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(34, 33)
+        Me.Panel2.TabIndex = 17
         '
         'login
         '
@@ -111,15 +115,16 @@ Partial Class login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Window
         Me.ClientSize = New System.Drawing.Size(570, 170)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.LinkLabel2)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "login"
         Me.Text = "Login"
@@ -127,13 +132,12 @@ Partial Class login
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label1 As Label
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Button2 As Button
-    Private WithEvents TextBox2 As TextBox
     Friend WithEvents LinkLabel2 As LinkLabel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents Panel1 As Panel
 End Class
