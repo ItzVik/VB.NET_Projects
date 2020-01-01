@@ -114,6 +114,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="akapeDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>akapeDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="changepassword.Designer.vb">
       <DependentUpon>changepassword.vb</DependentUpon>
     </Compile>
@@ -392,6 +397,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="akapeDataSet.xsc">
+      <DependentUpon>akapeDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="akapeDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>akapeDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="akapeDataSet.xss">
+      <DependentUpon>akapeDataSet.xsd</DependentUpon>
+    </None>
     <None Include="E-Dnevnik_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
@@ -407,6 +423,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="116-512.ico" />
+    <Content Include="akape.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="akape_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>akape.mdf</DependentUpon>
+    </Content>
+    <Content Include="Dbo.Table.Login.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="Resources\download1.png" />
     <None Include="Resources\wtf.png" />
     <None Include="Resources\ron.png" />
@@ -428,6 +454,11 @@
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
       <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
