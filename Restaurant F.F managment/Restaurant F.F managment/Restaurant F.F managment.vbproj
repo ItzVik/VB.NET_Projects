@@ -161,6 +161,12 @@
     <Compile Include="reserve.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="restaurantInfoForm.Designer.vb">
+      <DependentUpon>restaurantInfoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="restaurantInfoForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="toolsForm.Designer.vb">
       <DependentUpon>toolsForm.vb</DependentUpon>
     </Compile>
@@ -207,6 +213,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="reportsForm.resx">
       <DependentUpon>reportsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="restaurantInfoForm.resx">
+      <DependentUpon>restaurantInfoForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="toolsForm.resx">
       <DependentUpon>toolsForm.vb</DependentUpon>
