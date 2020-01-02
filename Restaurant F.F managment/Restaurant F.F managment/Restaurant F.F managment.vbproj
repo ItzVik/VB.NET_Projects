@@ -182,5 +182,53 @@
   <ItemGroup>
     <None Include="Resources\download3.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %285%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\akichu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asasas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\akasp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sdasd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aksa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\das.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upsa.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
