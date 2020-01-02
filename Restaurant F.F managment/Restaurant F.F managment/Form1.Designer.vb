@@ -146,11 +146,11 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.BackgroundImage = Global.Restaurant_F.F_managment.My.Resources.Resources.download1
+        Me.Button2.BackgroundImage = Global.Restaurant_F.F_managment.My.Resources.Resources.a1
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button2.Location = New System.Drawing.Point(818, 398)
+        Me.Button2.Location = New System.Drawing.Point(818, 400)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(42, 28)
+        Me.Button2.Size = New System.Drawing.Size(42, 26)
         Me.Button2.TabIndex = 10
         Me.Button2.UseVisualStyleBackColor = True
         '

@@ -92,6 +92,12 @@
     <Compile Include="Main.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="MasterForm.Designer.vb">
+      <DependentUpon>MasterForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -135,6 +141,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterForm.resx">
+      <DependentUpon>MasterForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -229,6 +238,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\upsa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kupas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kupas2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kupas3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kupas31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white%29kupas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\white%29kupas1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\asap1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upak2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upsak2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apak.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikaps.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fuk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sipaka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

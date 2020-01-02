@@ -201,7 +201,7 @@ Partial Class register
         '
         'Button2
         '
-        Me.Button2.BackgroundImage = Global.Restaurant_F.F_managment.My.Resources.Resources.download1
+        Me.Button2.BackgroundImage = Global.Restaurant_F.F_managment.My.Resources.Resources.a1
         Me.Button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button2.Location = New System.Drawing.Point(815, 397)
         Me.Button2.Name = "Button2"

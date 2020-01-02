@@ -18,7 +18,7 @@
 
         End If
         If a = 2 Then
-            MessageBox.Show("You are successfuly logged in!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            MessageBox.Show("You successfuly logged in!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Me.Hide()
             Main.Show()
         Else
