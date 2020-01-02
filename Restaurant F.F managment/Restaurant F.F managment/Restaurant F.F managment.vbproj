@@ -284,5 +284,8 @@
   <ItemGroup>
     <None Include="Resources\a1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

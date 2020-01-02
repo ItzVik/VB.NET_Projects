@@ -3,7 +3,6 @@
 
     Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         worker.Text = "Welcome, " + My.Settings.fname + " " + My.Settings.lname
-        Time.Text = dt
 
     End Sub
 
@@ -23,10 +22,10 @@
 
  
 
-    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
-
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
         Me.Hide()
         Form1.Show()
+
     End Sub
 
 
@@ -35,5 +34,50 @@
         Me.Close()
         Form1.Close()
 
+    End Sub
+
+
+    Private Sub btnDashboard_click(sender As Object, e As EventArgs) Handles btnDashboard.Click
+        sidepanel.Height = btnDashboard.Height
+        sidepanel.Top = btnDashboard.Top
+    End Sub
+
+    Private Sub btnMaster_Click(sender As Object, e As EventArgs) Handles btnMaster.Click
+        sidepanel.Height = btnMaster.Height
+        sidepanel.Top = btnMaster.Top
+    End Sub
+
+    Private Sub btnBilling_Click(sender As Object, e As EventArgs) Handles btnBilling.Click
+        sidepanel.Height = btnBilling.Height
+        sidepanel.Top = btnBilling.Top
+    End Sub
+
+    Private Sub btnAdministration_Click(sender As Object, e As EventArgs) Handles btnAdministration.Click
+        sidepanel.Height = btnAdministration.Height
+        sidepanel.Top = btnAdministration.Top
+    End Sub
+
+    Private Sub btnReports_Click(sender As Object, e As EventArgs) Handles btnReports.Click
+        sidepanel.Height = btnReports.Height
+        sidepanel.Top = btnReports.Top
+    End Sub
+
+    Private Sub btnRecords_Click(sender As Object, e As EventArgs) Handles btnRecords.Click
+        sidepanel.Height = btnRecords.Height
+        sidepanel.Top = btnRecords.Top
+    End Sub
+
+    Private Sub btnTools_Click(sender As Object, e As EventArgs) Handles btnTools.Click
+        sidepanel.Height = btnTools.Height
+        sidepanel.Top = btnTools.Top
+    End Sub
+
+    Private Sub Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Panel1.Paint
+        timer1.enabled = True
+
+    End Sub
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+        Time.Text = DateAndTime.Now
     End Sub
 End Class
