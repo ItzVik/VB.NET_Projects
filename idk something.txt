@@ -1,0 +1,45 @@
+
+Total Orders
+Total Sales
+Pending Orders
+Delivered Orders
+Rejected Orders
+
+Segoe UI, 14.25pt
+5,25,30
+darkgray
+
+
+
+Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Label1.Text = "Logged in as: " + My.Settings.fname + " " + My.Settings.lname
+
+    End Sub
+
+sidepanel.height = btnInventory.height
+sidepanel.top=btninventory.top
+
+
+Restaurant info
+Kitchen/Section Master
+Inventory Type
+Items Category
+Menu Items
+Tables
+Notes
+Menu Items Import/Export
+
+
+If not panel3.control.contains(fabricexportoutwars,instance) then
+panel3.controls.add)fabricexportoutward.instance)
+
+
+
+Restaurant name : restaurantName
+Primary Address
+Second Address
+Contact No
+Email id
+GSI NO
+Base Currency
+

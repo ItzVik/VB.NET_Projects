@@ -27,6 +27,8 @@
             My.Settings.phoneNumber = TextBox4.Text
             My.Settings.fname = TextBox5.Text
             My.Settings.lname = TextBox6.Text
+            My.Settings.restaurantName = TextBox7.Text
+
             My.Settings.Save()
 
             TextBox1.Text = ""

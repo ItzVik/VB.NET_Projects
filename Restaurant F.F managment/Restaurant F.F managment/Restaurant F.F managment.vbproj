@@ -73,11 +73,29 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="administrationForm.Designer.vb">
+      <DependentUpon>administrationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="administrationForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="billingForm.Designer.vb">
+      <DependentUpon>billingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="billingForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="calculator.Designer.vb">
       <DependentUpon>calculator.vb</DependentUpon>
     </Compile>
     <Compile Include="calculator.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboardForm.Designer.vb">
+      <DependentUpon>dashboardForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dashboardForm.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
@@ -119,11 +137,23 @@
     <Compile Include="order.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="recordsForm.Designer.vb">
+      <DependentUpon>recordsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="recordsForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="register.Designer.vb">
       <DependentUpon>register.vb</DependentUpon>
     </Compile>
     <Compile Include="register.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportsForm.Designer.vb">
+      <DependentUpon>reportsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reportsForm.vb">
+      <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="reserve.Designer.vb">
       <DependentUpon>reserve.vb</DependentUpon>
@@ -131,10 +161,25 @@
     <Compile Include="reserve.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="toolsForm.Designer.vb">
+      <DependentUpon>toolsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="toolsForm.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="administrationForm.resx">
+      <DependentUpon>administrationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="billingForm.resx">
+      <DependentUpon>billingForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="calculator.resx">
       <DependentUpon>calculator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboardForm.resx">
+      <DependentUpon>dashboardForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
@@ -154,8 +199,17 @@
     <EmbeddedResource Include="order.resx">
       <DependentUpon>order.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="recordsForm.resx">
+      <DependentUpon>recordsForm.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="register.resx">
       <DependentUpon>register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportsForm.resx">
+      <DependentUpon>reportsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="toolsForm.resx">
+      <DependentUpon>toolsForm.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -286,6 +340,39 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output-onlinepngtools %284%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitchen2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\inventory2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\items2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tables2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tables3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notes2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importexport2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

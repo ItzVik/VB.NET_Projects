@@ -41,6 +41,8 @@ Partial Class register
         Me.Label6 = New System.Windows.Forms.Label()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'LinkLabel1
@@ -80,7 +82,7 @@ Partial Class register
         '
         Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Button1.Location = New System.Drawing.Point(12, 352)
+        Me.Button1.Location = New System.Drawing.Point(12, 366)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(565, 40)
         Me.Button1.TabIndex = 19
@@ -239,6 +241,26 @@ Partial Class register
         Me.TextBox6.TabIndex = 28
         Me.TextBox6.Text = "last name"
         '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.BackColor = System.Drawing.Color.Transparent
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.ForeColor = System.Drawing.Color.White
+        Me.Label7.Location = New System.Drawing.Point(12, 339)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(113, 13)
+        Me.Label7.TabIndex = 29
+        Me.Label7.Text = "Restaurant Name :"
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox7.Location = New System.Drawing.Point(131, 332)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(454, 29)
+        Me.TextBox7.TabIndex = 30
+        '
         'register
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -246,6 +268,8 @@ Partial Class register
         Me.BackgroundImage = Global.Restaurant_F.F_managment.My.Resources.Resources.images
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(865, 442)
+        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label6)
@@ -293,4 +317,6 @@ Partial Class register
     Friend WithEvents Label6 As Label
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Label7 As System.Windows.Forms.Label
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
 End Class
