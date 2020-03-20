@@ -134,4 +134,16 @@
     Private Sub fillpanel_Paint(sender As Object, e As PaintEventArgs) Handles fillpanel.Paint
 
     End Sub
+
+    Private Sub Time_Click(sender As Object, e As EventArgs) Handles Time.Click
+
+    End Sub
+
+    Private Sub worker_Click(sender As Object, e As EventArgs) Handles worker.Click
+
+    End Sub
+
+    Private Sub toppanel_Paint(sender As Object, e As PaintEventArgs) Handles toppanel.Paint
+
+    End Sub
 End Class

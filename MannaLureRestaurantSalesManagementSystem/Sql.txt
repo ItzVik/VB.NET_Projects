@@ -1,0 +1,138 @@
+USE [RestaurantSalesManagementSystem]
+GO
+
+/****** Object:  Table [dbo].[UserTable]    Script Date: 05/11/2019 08:09:57 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[UserTable](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[UserName] [nvarchar](50) NULL,
+	[Password] [nvarchar](50) NULL,
+	[FirstName] [nvarchar](50) NULL,
+	[LastName] [nvarchar](50) NULL,
+	[DOB] [nvarchar](50) NULL,
+	[Location] [nvarchar](50) NULL,
+	[ContactNo] [nvarchar](50) NULL,
+	[Mail] [nvarchar](50) NULL,
+	[UserType] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+
+
+USE [RestaurantSalesManagementSystem]
+GO
+
+/****** Object:  Table [dbo].[CategoryTable]    Script Date: 05/13/2019 08:06:57 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[CategoryTable](
+	[CategoryID] [nvarchar](50) NULL,
+	[CategoryName] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+
+
+
+USE [RestaurantSalesManagementSystem]
+GO
+
+/****** Object:  Table [dbo].[MenuItemTable]    Script Date: 05/15/2019 08:20:07 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[MenuItemTable](
+	[ItemCode] [nvarchar](50) NULL,
+	[Category] [nvarchar](50) NULL,
+	[ItemName] [nvarchar](50) NULL,
+	[ItemDesc] [nvarchar](max) NULL,
+	[HSNCode] [nvarchar](50) NULL,
+	[Rate] [nvarchar](50) NULL,
+	[TaxRate] [nvarchar](50) NULL,
+	[Total] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+USE [RestaurantSalesManagementSystem]
+GO
+
+/****** Object:  Table [dbo].[OrderTable]    Script Date: 05/17/2019 01:35:32 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[OrderTable](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[OrderNo] [nvarchar](50) NULL,
+	[CustomerName] [nvarchar](50) NULL,
+	[ContactNo] [nvarchar](50) NULL,
+	[Location] [nvarchar](max) NULL,
+	[OrderDate] [nvarchar](50) NULL,
+	[GrandTotal] [nvarchar](50) NULL,
+	[Status] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+USE [RestaurantSalesManagementSystem]
+GO
+
+/****** Object:  Table [dbo].[OrderDetailsTable]    Script Date: 05/17/2019 01:35:40 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[OrderDetailsTable](
+	[OrderNo] [nvarchar](50) NULL,
+	[ItemName] [nvarchar](50) NULL,
+	[Price] [nvarchar](50) NULL,
+	[Quantity] [nvarchar](50) NULL,
+	[Total] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+USE [RestaurantSalesManagementSystem]
+GO
+
+/****** Object:  Table [dbo].[BillTable]    Script Date: 05/17/2019 01:35:46 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[BillTable](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[BillNo] [nvarchar](50) NULL,
+	[OrderNo] [nvarchar](50) NULL,
+	[Price] [nvarchar](50) NULL,
+	[Discount] [nvarchar](50) NULL,
+	[Totaltax] [nvarchar](50) NULL,
+	[TotalPrice] [nvarchar](50) NULL
+) ON [PRIMARY]
+
+GO
+
+
+
+
