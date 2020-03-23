@@ -18,7 +18,7 @@ Public Class studentForm
     Public Sub disp_data1()
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
-        con.ConnectionString = "Data Source=HYSTEL\HYSTELSQL;Initial Catalog=master;Integrated Security=True"
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
         con.Open()
         cmd = con.CreateCommand()
         cmd.CommandType = CommandType.Text
@@ -37,7 +37,7 @@ Public Class studentForm
     Public Sub disp_data2()
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
-        con.ConnectionString = "Data Source=HYSTEL\HYSTELSQL;Initial Catalog=master;Integrated Security=True"
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
         con.Open()
         cmd = con.CreateCommand()
         cmd.CommandType = CommandType.Text
@@ -53,7 +53,6 @@ Public Class studentForm
 
     End Sub
     Private Sub studentForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        dwts1.Checked = True
         disp_data1()
         disp_data2()
         Timer1.Enabled = False
@@ -64,7 +63,7 @@ Public Class studentForm
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
 
-        con.ConnectionString = "Data Source=HYSTEL\HYSTELSQL;Initial Catalog=master;Integrated Security=True"
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
         con.Open()
         cmd = New SqlCommand("INSERT INTO [dbo].[grades] ([fname],[lname],[grade],[subject]) VALUES ('" + fname2.Text + "', '" + lname2.Text + "', '" + grade.Text + "', '" + subject.Text + "')", con)
         If (fname2.Text = "" And lname2.Text = "" And grade.Text = "" And subject.Text = "") Then
@@ -82,7 +81,7 @@ Public Class studentForm
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
 
-        con.ConnectionString = "Data Source=HYSTEL\HYSTELSQL;Initial Catalog=master;Integrated Security=True"
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
         con.Open()
         cmd = New SqlCommand("INSERT INTO [dbo].[students] ([flname]) VALUES ('" & fname.Text & " " & lname.Text & "')", con)
         If (fname.Text = "" And lname.Text = "") Then

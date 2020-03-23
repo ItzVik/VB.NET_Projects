@@ -18,7 +18,7 @@ Public Class attendanceForm
     Public Sub disp_data()
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
-        con.ConnectionString = "Data Source=HYSTEL\HYSTELSQL;Initial Catalog=master;Integrated Security=True"
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
         con.Open()
         cmd = con.CreateCommand()
         cmd.CommandType = CommandType.Text
@@ -37,7 +37,7 @@ Public Class attendanceForm
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
 
-        con.ConnectionString = "Data Source=HYSTEL\HYSTELSQL;Initial Catalog=master;Integrated Security=True"
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
         con.Open()
         cmd = New SqlCommand(" INSERT INTO [dbo].[attendance] ([fname],[lname],[all]) VALUES ('" + fname.Text + "', '" + lname.Text + "', '" + "No" + "')", con)
         If (fname.Text = "" And lname.Text = "") Then
@@ -56,7 +56,7 @@ Public Class attendanceForm
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
 
-        con.ConnectionString = "Data Source=HYSTEL\HYSTELSQL;Initial Catalog=master;Integrated Security=True"
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
         con.Open()
         cmd = New SqlCommand(" INSERT INTO [dbo].[attendance] ([fname],[lname],[all]) VALUES ('" + "..." + "', '" + "..." + "', '" + "Yes" + "')", con)
         cmd.ExecuteNonQuery()
@@ -82,7 +82,7 @@ Public Class attendanceForm
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
 
-        con.ConnectionString = "Data Source=HYSTEL\HYSTELSQL;Initial Catalog=master;Integrated Security=True"
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
         con.Open()
         cmd = New SqlCommand(" INSERT INTO [dbo].[attendance] ([fname],[lname],[all]) VALUES ('" + "..." + "', '" + "..." + "', '" + count.Text + "')", con)
         If (count.Text = "") Then

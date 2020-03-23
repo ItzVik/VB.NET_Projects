@@ -20,7 +20,7 @@ Public Class employeeForm
     Public Sub disp_data()
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
-        con.ConnectionString = "Data Source=HYSTEL\HYSTELSQL;Initial Catalog=master;Integrated Security=True"
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
         con.Open()
         cmd = con.CreateCommand()
         cmd.CommandType = CommandType.Text
@@ -39,7 +39,7 @@ Public Class employeeForm
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
 
-        con.ConnectionString = "Data Source=HYSTEL\HYSTELSQL;Initial Catalog=master;Integrated Security=True"
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
         con.Open()
         cmd = New SqlCommand("  INSERT INTO [dbo].[employees] ([fname],[lname])VALUES ('" + TextBox1.Text + "', '" + TextBox2.Text + "')", con)
         If (TextBox1.Text = "") Then

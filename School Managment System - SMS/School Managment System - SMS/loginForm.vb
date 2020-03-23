@@ -6,11 +6,12 @@ Public Class loginForm
 
         My.Settings.username = textBox1.Text
         My.Settings.Save()
+        Dim con As New SqlConnection
 
 
-        Dim connection As New SqlConnection("Data Source=HYSTEL\HYSTELSQL;Initial Catalog=master;Integrated Security=True")
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
 
-        Dim command As New SqlCommand("select * from info where username = @username and password = @password", connection)
+        Dim command As New SqlCommand("select * from info where username = @username and password = @password", con)
 
         command.Parameters.Add("@username", SqlDbType.VarChar).Value = textBox1.Text
         command.Parameters.Add("@password", SqlDbType.VarChar).Value = textBox2.Text

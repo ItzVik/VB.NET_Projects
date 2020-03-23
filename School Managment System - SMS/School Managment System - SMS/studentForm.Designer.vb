@@ -32,7 +32,6 @@ Partial Class studentForm
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.addBtn = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
-        Me.dwts1 = New System.Windows.Forms.CheckBox()
         Me.subject = New System.Windows.Forms.TextBox()
         Me.grade = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -136,7 +135,6 @@ Partial Class studentForm
         '
         'Panel3
         '
-        Me.Panel3.Controls.Add(Me.dwts1)
         Me.Panel3.Controls.Add(Me.subject)
         Me.Panel3.Controls.Add(Me.grade)
         Me.Panel3.Controls.Add(Me.Button1)
@@ -150,16 +148,6 @@ Partial Class studentForm
         Me.Panel3.Name = "Panel3"
         Me.Panel3.Size = New System.Drawing.Size(316, 171)
         Me.Panel3.TabIndex = 9
-        '
-        'dwts1
-        '
-        Me.dwts1.AutoSize = True
-        Me.dwts1.Location = New System.Drawing.Point(7, 141)
-        Me.dwts1.Name = "dwts1"
-        Me.dwts1.Size = New System.Drawing.Size(96, 17)
-        Me.dwts1.TabIndex = 10
-        Me.dwts1.Text = "Want to save?"
-        Me.dwts1.UseVisualStyleBackColor = True
         '
         'subject
         '
@@ -347,7 +335,6 @@ Partial Class studentForm
     Friend WithEvents Button1 As Button
     Friend WithEvents subject As TextBox
     Friend WithEvents grade As TextBox
-    Friend WithEvents dwts1 As CheckBox
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Label8 As Label
     Friend WithEvents Button2 As Button

@@ -8,7 +8,7 @@ Public Class registerForm
         Dim con As New SqlConnection
         Dim cmd As New SqlCommand
 
-        con.ConnectionString = "Data Source=HYSTEL\HYSTELSQL;Initial Catalog=master;Integrated Security=True"
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
         con.Open()
         cmd = New SqlCommand("INSERT INTO [dbo].[info] ([username] ,[password]  ,[email]) VALUES ('" + textBox1.Text + "', '" + textBox2.Text + "', '" + TextBox3.Text + "')", con)
         If (textBox1.Text = "" And textBox2.Text = "" And TextBox3.Text = "") Then

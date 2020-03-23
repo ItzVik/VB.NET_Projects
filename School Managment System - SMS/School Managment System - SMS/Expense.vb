@@ -1,4 +1,5 @@
-﻿Imports System.IO
+﻿Imports System.Data.SqlClient
+Imports System.IO
 Public Class Expense
     Inherits UserControl
     Private Shared _instance As Expense
@@ -13,7 +14,49 @@ Public Class Expense
         End Get
 
     End Property
-    Private Sub Expense_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Public Sub disp_data()
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
+        con.Open()
+        cmd = con.CreateCommand()
+        cmd.CommandType = CommandType.Text
+        cmd.CommandText = "select * from expense"
+        cmd.ExecuteNonQuery()
+        Dim dt As New DataTable()
+        Dim da As New SqlDataAdapter(cmd)
+        da.Fill(dt)
+        DataGridView2.DataSource = dt
 
+
+        con.Close()
+
+    End Sub
+    Private Sub Expense_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        disp_data()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim con As New SqlConnection
+        Dim cmd As New SqlCommand
+
+        con.ConnectionString = "Data Source=192.168.56.1,49804;Initial Catalog=master;Integrated Security=True"
+        con.Open()
+        cmd = New SqlCommand("INSERT INTO [dbo].[expense] ([first name],[last name],[for / from],[how much],[for what],[pay / give]) VALUES ('" + fname.Text + "', '" + lname.Text + "', '" + ff.SelectedItem.ToString + "', '" + hm.Text + "', '" + fw.Text + "', '" + pg.SelectedItem.ToString + "')", con)
+        If (fname.Text = "" And lname.Text = "" And hm.Text = "" And fw.Text = "") Then
+            MessageBox.Show("Please enter the details of expense.")
+        Else
+            cmd.ExecuteNonQuery()
+            MsgBox("Succerssfully evidented the expense.", MsgBoxStyle.Information, "Success")
+            fname.Clear()
+            lname.Clear()
+            hm.Clear()
+            fw.Clear()
+        End If
+        con.Close()
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        disp_data()
     End Sub
 End Class
