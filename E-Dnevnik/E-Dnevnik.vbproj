@@ -68,16 +68,16 @@
     <ApplicationIcon>116-512.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>AEEAFE9824EBB10E97FA6157B31FC7C6D69CE9B6</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>7E253060328EACEABE929FA2991FCFD4B021BDFA</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>E-Dnevnik_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>E-Dnevnik_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -408,7 +408,6 @@
     <None Include="akapeDataSet.xss">
       <DependentUpon>akapeDataSet.xsd</DependentUpon>
     </None>
-    <None Include="E-Dnevnik_TemporaryKey.pfx" />
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -423,13 +422,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="116-512.ico" />
-    <Content Include="akape.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="akape_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>akape.mdf</DependentUpon>
-    </Content>
     <Content Include="Dbo.Table.Login.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
